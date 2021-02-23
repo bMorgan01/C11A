@@ -14,7 +14,7 @@ public class Cat {
 	private static final int EYE_HEIGHT = 200;
 	private static final int EYE_WIDTH = 100;
 	// pick mouth height, width is based on head dimension
-	private static final int MOUTH_HEIGHT = 10;
+	private static final int MOUTH_HEIGHT = HEAD_DIMENSION/2;
 	private static final int MOUTH_WIDTH = HEAD_DIMENSION*4;
 	// mouth starts about 40% from left edge of head
 	private static final int MOUTH_X = HEAD_DIMENSION/5 * -4;
@@ -45,6 +45,6 @@ public class Cat {
 		g2.setColor(Color.red);
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("\' Abstract art \'", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("ITS ALL JUST CIRCLES!", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
